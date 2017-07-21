@@ -1,0 +1,33 @@
+/*
+package com.example.android.sunshine2.app.sync;
+
+import android.content.Intent;
+import android.os.IBinder;
+import android.util.Log;
+import android.app.Service;
+
+*/
+/**
+ * Created by Dell on 11-07-2016.
+ *//*
+
+public class SunshineSyncService extends Service {
+    private static final Object sSyncAdapterLock = new Object();
+    private static SunshineSyncAdapter sSunshineSyncAdapter = null;
+
+    @Override
+    public void onCreate() {
+        Log.d("SunshineSyncService", "onCreate - SunshineSyncService");
+        synchronized (sSyncAdapterLock) {
+            if (sSunshineSyncAdapter == null) {
+                sSunshineSyncAdapter = new SunshineSyncAdapter(getApplicationContext(), true);
+            }
+        }
+    }
+
+    @Override
+    public IBinder onBind(Intent intent) {
+        return sSunshineSyncAdapter.getSyncAdapterBinder();
+    }
+}
+*/
